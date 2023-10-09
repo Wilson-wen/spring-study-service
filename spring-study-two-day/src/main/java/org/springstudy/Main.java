@@ -6,19 +6,17 @@ import org.springstudy.factory.support.DefaultListableBeanFactory;
 
 public class Main {
     public static void main(String[] args) {
-        // 初始化bean
+        // 1.初始化 BeanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
 
-        // 注册bean
+        // 2. 注入bean
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
+
         beanFactory.registerBeanDefinition("userService", beanDefinition);
 
-        // 第一次获取bean
-        UserService userService = (UserService) beanFactory.getBean("userService");
+        // 3.获取bean
+        UserService userService = (UserService) beanFactory.getBean("userService","zhangsan");
         userService.queryUserInfo();
-
-        // 第二次获取 bean from Singleton
-        UserService userService_singleton = (UserService) beanFactory.getBean("userService");
-        userService_singleton.queryUserInfo();
     }
+
 }

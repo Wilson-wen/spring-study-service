@@ -21,8 +21,4 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         beanDefinitionMap.put(beanName, beanDefinition);
     }
 
-    @Override
-    public Object getBean(String name, Object... args) throws BeansException {
-        return null;
-    }
 }
