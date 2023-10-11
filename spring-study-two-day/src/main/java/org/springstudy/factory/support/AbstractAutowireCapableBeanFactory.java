@@ -1,7 +1,7 @@
 package org.springstudy.factory.support;
 
 import cn.hutool.core.bean.BeanUtil;
-import org.springstudy.exception.BeansException;
+import org.springstudy.BeansException;
 import org.springstudy.bean.PropertyValue;
 import org.springstudy.bean.PropertyValues;
 import org.springstudy.factory.config.BeanDefinition;

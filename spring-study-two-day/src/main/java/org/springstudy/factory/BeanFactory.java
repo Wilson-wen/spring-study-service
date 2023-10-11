@@ -1,6 +1,6 @@
 package org.springstudy.factory;
 
-import org.springstudy.exception.BeansException;
+import org.springstudy.BeansException;
 
 
 public interface BeanFactory {

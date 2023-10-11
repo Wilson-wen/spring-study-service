@@ -1,6 +1,6 @@
 package org.springstudy.factory.support;
 
-import org.springstudy.exception.BeansException;
+import org.springstudy.BeansException;
 import org.springstudy.factory.config.BeanDefinition;
 
 import java.lang.reflect.Constructor;

@@ -1,8 +1,6 @@
 package org.springstudy.factory.support;
 
-import org.springstudy.exception.BeansException;
 import org.springstudy.factory.core.io.DefaultResourceLoader;
-import org.springstudy.factory.core.io.Resource;
 import org.springstudy.factory.core.io.ResourceLoader;
 
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader {
