@@ -1,10 +1,18 @@
 package org.springstudy.test;
 
+
+import lombok.Data;
+
+@Data
 public class UserService {
 
     private String userId;
 
     private String name;
+
+    private String company;
+
+    private String location;
 
     private UserDao userDao;
 
@@ -19,27 +27,4 @@ public class UserService {
         this.name = name;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public UserDao getUserDao() {
-        return userDao;
-    }
-
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
 }
